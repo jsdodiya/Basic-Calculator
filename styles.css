@@ -1,29 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-html, body{
+html, body {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/33/620/875/pencil-magnifier-notebook-math-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button{
-    padding: 20px;
-    width: 60px;
-    margin: 0 3px;
-    border: 2px solid black;
-    border-radius: 9px;
+#welcome-section {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#lets-calculate-btn {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    width: fit-content;
+    background-color: #80d4ff;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.row{
+#lets-calculate-btn:hover {
+    background-color: #66c2f0;
+    transform: scale(1.05);
+}
+
+#lets-calculate-btn:active {
+    background-color: #4db8e6;
+    transform: scale(0.95);
+}
+
+.calculator-boundary {
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    width: 300px;
+    margin: auto;
+}
+
+.row input {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     margin: 8px 0;
 }
 
-.row input{
-    width: 270px;
-    font-size: 20px;
-    margin: 0;
-    padding: 10px 0px;
-    border: 2px solid black;
-    border-radius: 5px;
+.right-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+}
+
+.button {
+    font-size: larger;
+    font-weight: bold;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    border: 1.6px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #d4d4d4;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: #c0c0c0;
+    transform: scale(0.95);
+}
+
+.button.clear {
+    background-color: #ff8080;
+    color: white;
+}
+
+.button.equals {
+    background-color: #80d4ff;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
 }
